@@ -15,9 +15,7 @@
 }
 
 body {
-  max-width: 1200px;
   margin: auto;
-  height: 4000px;
 }
 
 /* CONTAINER */
@@ -25,13 +23,29 @@ body {
 .container {
   margin: 0 auto;
   width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
-@media screen and (min-width: 1216px) .container {
-    max-width: 1152px;
+@media screen and (max-width: 1023px) {
+  .container {
+    display: block;
+  }
 }
-@media screen and (min-width: 1024px) .container {
+@media screen and (min-width: 1024px) {
+  .container {
     max-width: 960px;
+  }
+}
+@media screen and (min-width: 1216px) {
+  .container {
+    max-width: 1152px;
+  }
+}
+@media screen and (min-width: 1408px) {
+  .container {
+    max-width: 1344px;
+  }
 }
 
 a {
@@ -45,11 +59,7 @@ a:hover {
 
 /* NAV */
 
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+
 .navbar {
   padding: 1.2rem 0;
   min-height: 3.25rem;
@@ -60,6 +70,7 @@ a:hover {
 .navbar-brand .bx {
   font-size: 50px;
   color: #7510F7;
+  padding: 0.5rem 0.75rem;
 }
 
 .navbar-menu {
@@ -108,10 +119,25 @@ a:hover {
 
 .column {
   padding: 0.75rem;
+  text-align: center;
 }
 
 h1, h2 {
   margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+img {
+  margin: 2rem 0;
 }
 
 
