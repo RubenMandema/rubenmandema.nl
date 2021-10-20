@@ -10,7 +10,7 @@
         <title>Ruben Mandema - Contact</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/Users/macbook/Desktop/Rubenmandema.nl/Style_contact.css">
+        <link rel="stylesheet" href="Style_contact.css">
         <!-- Boxicons CDN Link-->
         <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     </head>
@@ -33,9 +33,13 @@
             <div class="container">
                 <div class="columns-titel">
                     <div class="column">
-                        <img src="/Users/macbook/Desktop/Rubenmandema.nl/Recources/Ruben-mandema-avatar.svg" alt="" class="avatar">
+                        <img src="Recources/Ruben-mandema-avatar.svg" alt="" class="avatar">
                         <h1 class="title">Bedankt dat je de tijd hebt genomen om contact op te nemen. <br> Hoe kan ik je vandaag helpen?</h1>
                     </div>
+                </div>
+                <div id="thank-you-message">
+                    <h2>Bericht ontvangen. Bedankt!</h2>
+                    <p>Ik neem binnenkort contact met je op.</p>
                 </div>
                 <form action="contact-form-handler.php" method="post" id="contact-form">
                     <div class="columns">
@@ -50,7 +54,7 @@
                     </div>
                     <div class="columns">
                         <div class="column">
-                            <label for="message">Bericht</label> <br>
+                            <label for="message">Bericht</label>
                             <textarea name="message" class="message" cols="30" rows="4" required></textarea>
                         </div>
                     </div>        
@@ -58,6 +62,22 @@
                 </form>
             </div>
         </section>
+
+        <script>
+            const form = document.querySelector('form');
+            const thankYouMessage = document.querySelector('#thank-you-message');
+            const titel = document.querySelector('.columns-titel h1');
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                thankYouMessage.classList.add('show');
+                setTimeout(() => form.submit(), 2000);
+                form.style.display = "none";
+                titel.style.display = 'none';
+                }
+            );
+            
+        </script>
         
 
     </body>

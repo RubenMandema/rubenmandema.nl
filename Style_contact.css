@@ -50,7 +50,7 @@ body, html {
 
   }
   h2 {
-    font-size: 15px;
+    font-size: 20px;
   }
   form {
     width: 100%;
@@ -119,7 +119,7 @@ a:hover {
 
 .button  {
   padding: 0.5rem 1.2rem;
-  margin: 20px 0 80px;
+  margin: 30px 0 80px;
   font-weight: 400;
   font-size: 18px;
   color: #7510F7;
@@ -131,6 +131,7 @@ a:hover {
   height: 45px;
   box-sizing: border-box;
   transition: all 0.2s ease-in;
+  width: 25%;
 }
 
 .button:hover {
@@ -155,10 +156,12 @@ h1 {
 form {
   margin-top: 50px;
   transition: all 4s ease-in-out;
+  display: ;
 }
 
-.contact-form {
-  max-width: 640px;
+#contact-form {
+  max-width: 640px;;
+  width: 100%
 }
 
 .columns {
@@ -182,6 +185,14 @@ form .column {
 .input {
   width: 100%;
 }
+input:required {
+  box-shadow: none;
+}
+
+input {
+  padding: calc(0.75em - 1px);
+}
+
 
 label {
   margin-bottom: 0.5rem;
@@ -191,6 +202,15 @@ label {
 
 textarea {
   width: 100%;
+}
+
+#thank-you-message {
+  display: none;
+  margin-top: 100px;
+}
+
+#thank-you-message.show {
+  display: block;
 }
 
 
