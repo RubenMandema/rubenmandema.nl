@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!-[endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ruben Mandema - Contact</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/Users/macbook/Desktop/Rubenmandema.nl/Style_contact.css">
+        <!-- Boxicons CDN Link-->
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    
+    <body>
+        <nav class="navbar" role='navigation'>
+            <div class="container-nav nav">
+              <div class="navbar-brand">
+                <i class='bx bxs-registered icon'></i>
+              </div>
+              <div class="navbar-menu">
+                <div class="navbar-item">
+                  <a class="button" href="index.html" >Terug</a>
+                </div>
+              </div>
+            </div>
+        </nav> 
+
+        <section class="form">
+            <div class="container">
+                <div class="columns-titel">
+                    <div class="column">
+                        <img src="/Users/macbook/Desktop/Rubenmandema.nl/Recources/Ruben-mandema-avatar.svg" alt="" class="avatar">
+                        <h1 class="title">Bedankt dat je de tijd hebt genomen om contact op te nemen. <br> Hoe kan ik je vandaag helpen?</h1>
+                    </div>
+                </div>
+                <form action="contact-form-handler.php" method="post" id="contact-form">
+                    <div class="columns">
+                        <div class="column">
+                            <label for="name">Naam</label>
+                            <input name="name" type="text">
+                        </div>  
+                        <div class="column">
+                            <label for="name">Email</label>
+                            <input name="email" type="text">
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column">
+                            <label for="message">Bericht</label> <br>
+                            <textarea name="message" class="message" cols="30" rows="4" required></textarea>
+                        </div>
+                    </div>        
+                        <input type="submit" class="button" value="Verstuur">
+                </form>
+            </div>
+        </section>
+        
+
+    </body>
+</html>
