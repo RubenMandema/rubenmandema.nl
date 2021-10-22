@@ -1,0 +1,163 @@
+@import "Sass/components/buttons.scss";
+@import "Sass/layout/navbar.scss";
+
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+  box-sizing: inherit;
+}
+*::before {
+  box-sizing: inherit;
+}
+*::after {
+  box-sizing: inherit;
+}
+div {
+  display: block;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box !important;
+}
+
+/* CONTAINER */
+
+.container {
+  margin: 0 auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-nav {
+  margin: 0 auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1023px) {
+  h1 {
+    font-size: 25px !important;
+  }
+  h2 {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container, .container-nav {
+    max-width: 960px;
+  }
+}
+@media screen and (min-width: 1216px) {
+  .container, .container-nav {
+    max-width: 1152px;
+  }
+}
+@media screen and (min-width: 1408px) {
+  .container, .container-nav {
+    max-width: 1344px;
+  }
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+  &:hover {
+    color: #7510F7;
+  }
+}
+
+
+
+
+.button  {
+  @extend %button;
+}
+
+/* MAIN - HERO */
+
+.hero {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+
+}
+
+.hero-body {
+  padding: 3rem 1.5rem;
+}
+
+
+.column {
+  padding: 0.75rem;
+  text-align: center;
+}
+
+h1, h2 {
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+img {
+  margin: 2rem 0;
+  width: 210px;
+}
+
+.is-bottom {
+  text-align: center;
+  width: 75%;
+  margin-bottom: 0;
+  max-width: 860px;
+}
+
+
+/* HALLO BERICHT */
+.hallo {
+  background-color: #7510F7;
+  color: #fff;
+  padding: 9rem 1.5rem;
+}
+
+.title {
+  font-size: 2rem !important;
+}
+
+
+
+
+
+
+
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  border-left: 1px solid #E6ECF8;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #141c3a;
+}
+
+
+
+
+
