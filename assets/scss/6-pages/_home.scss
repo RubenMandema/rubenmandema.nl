@@ -1,0 +1,62 @@
+
+//***********************************************
+// Import 1-helpers
+@use "../1-helpers/variables" as v;
+//***********************************************
+
+// MAIN - HERO 
+
+.hero {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  .hero-body {
+    padding: 3rem 1.5rem;
+  }
+  
+  
+  .column {
+    padding: 0.75rem;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+  }
+  
+  h2 {
+    font-weight: 300;
+    line-height: 1.5;
+  }
+  
+  img {
+    margin: 2rem 0;
+    width: 210px;
+  }
+  
+  .is-bottom {
+    text-align: center;
+    width: 75%;
+    margin-bottom: 0;
+    max-width: 860px;
+  }
+  
+  
+  /* HALLO BERICHT */
+  .hallo {
+    background-color: v.$primair;;
+    color: #fff;
+    padding: 9rem 1.5rem;
+  }
+  
+  .title {
+    font-size: 2rem !important;
+  }
