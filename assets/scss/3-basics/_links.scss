@@ -1,0 +1,13 @@
+//***********************************************
+// Import 1-helpers
+@use "../1-helpers/variables" as v;
+//***********************************************
+
+
+a {
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+    &:hover {
+      color: v.$primair;
+    }
+  }

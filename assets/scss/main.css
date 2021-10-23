@@ -1,3 +1,4 @@
+/* Google Font Link */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 .button {
   padding: 0.5rem 1.2rem;
@@ -12,67 +13,30 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-
 .button:hover {
   color: #fff;
   background-color: #7510F7;
 }
 
-/* NAV */
-.navbar {
-  padding: 1.2rem 0;
-  min-height: 3.25rem;
-  margin: auto;
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: white;
 }
 
-.navbar .bx {
-  font-size: 50px;
-  color: #7510F7;
-  padding: 0.5rem 0.75rem;
+* *:before *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
-.navbar-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.navbar-item {
-  cursor: pointer;
-  font-weight: 300;
-  padding: 0.5rem 0.75rem;
-  color: #141c3a;
-}
-
-/* Google Font Link */
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Poppins" , sans-serif;
+  font-family: "Poppins", sans-serif;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-}
-
-*::before {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-*::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-div {
-  display: block;
 }
 
 body, html {
@@ -80,11 +44,8 @@ body, html {
   padding: 0;
   width: 100%;
   height: 100%;
-  -webkit-box-sizing: border-box !important;
-          box-sizing: border-box !important;
 }
 
-/* CONTAINER */
 .container {
   margin: 0 auto;
   width: auto;
@@ -113,44 +74,67 @@ body, html {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 1023px) {
-  h1 {
-    font-size: 25px !important;
-  }
-  h2 {
-    font-size: 15px;
-  }
-}
-
 @media screen and (min-width: 1024px) {
   .container, .container-nav {
     max-width: 960px;
   }
 }
-
 @media screen and (min-width: 1216px) {
   .container, .container-nav {
     max-width: 1152px;
   }
 }
-
 @media screen and (min-width: 1408px) {
   .container, .container-nav {
     max-width: 1344px;
   }
 }
+@media screen and (max-width: 1023px) {
+  h1 {
+    font-size: 25px !important;
+  }
 
+  h2 {
+    font-size: 15px;
+  }
+}
 a {
   text-decoration: none;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-
 a:hover {
   color: #7510F7;
 }
 
-/* MAIN - HERO */
+.navbar {
+  padding: 1.2rem 0;
+  min-height: 3.25rem;
+  margin: auto;
+}
+.navbar .bx {
+  font-size: 50px;
+  color: #7510F7;
+  padding: 0.5rem 0.75rem;
+}
+.navbar__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navbar__item {
+  cursor: pointer;
+  font-weight: 300;
+  padding: 0.5rem 0.75rem;
+  color: #141c3a;
+}
+
 .hero {
   padding-top: 2rem;
   display: -webkit-box;

@@ -1,0 +1,13 @@
+//***********************************************
+// Import 1-helpers
+@use "../1-helpers/variables" as v;
+//***********************************************
+
+@media screen and (max-width: 1023px) {
+    h1 {
+      font-size: 25px !important;
+    }
+    h2 {
+      font-size: 15px;
+    }
+  }

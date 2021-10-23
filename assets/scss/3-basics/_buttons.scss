@@ -1,0 +1,22 @@
+//***********************************************
+// Import 1-helpers
+@use "../1-helpers/variables" as v;
+//***********************************************
+
+.button  {
+    padding: 0.5rem 1.2rem;
+    font-weight: 400;
+    font-size: 18px;
+    color: v.$primair;
+    border-width: 2px;
+    border-color: v.$primair;
+    border-radius: 50px;
+    border-style: solid;
+    height: 45px;
+    box-sizing: border-box;
+    &:hover {
+        color: #fff;
+        background-color: v.$primair;
+    }
+}
+
