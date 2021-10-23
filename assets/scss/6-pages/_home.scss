@@ -1,16 +1,45 @@
-
 //***********************************************
 // Import 1-helpers
 @use "../1-helpers/variables" as v;
 //***********************************************
 
+
+//***********************************************
+// Import 2-tools
+
+//***********************************************
+
+
+//***********************************************
+// Import 3-basics
+@use "../3-basics/buttons";
+@use "../3-basics/base";
+@use "../3-basics/typography";
+@use "../3-basics/links";
+//***********************************************
+
+
+//***********************************************
+// Import 4-layouts
+@use "../4-layouts/navbar";
+//***********************************************
+
+
+
+//***********************************************
+// Import 5-modules
+
+//***********************************************
 // MAIN - HERO 
 
 .hero {
     padding-top: 2rem;
     display: flex;
     justify-content: center;
-  
+    
+    h1, h2 {
+      margin-bottom: 1.5rem;
+    }
   }
   
   .hero-body {
@@ -23,14 +52,7 @@
     text-align: center;
   }
   
-  h1, h2 {
-    margin-bottom: 1.5rem;
-  }
   
-  h1 {
-    font-size: 3rem;
-    font-weight: 800;
-  }
   
   h2 {
     font-weight: 300;
@@ -57,6 +79,3 @@
     padding: 9rem 1.5rem;
   }
   
-  .title {
-    font-size: 2rem !important;
-  }

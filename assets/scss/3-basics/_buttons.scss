@@ -8,12 +8,15 @@
     font-weight: 400;
     font-size: 18px;
     color: v.$primair;
+    background: white;
     border-width: 2px;
     border-color: v.$primair;
     border-radius: 50px;
     border-style: solid;
     height: 45px;
     box-sizing: border-box;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
     &:hover {
         color: #fff;
         background-color: v.$primair;

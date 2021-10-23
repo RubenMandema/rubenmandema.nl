@@ -4,6 +4,7 @@
   font-weight: 400;
   font-size: 18px;
   color: #7510F7;
+  background: white;
   border-width: 2px;
   border-color: #7510F7;
   border-radius: 50px;
@@ -11,6 +12,9 @@
   height: 45px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
 }
 .button:hover {
   color: #fff;
@@ -47,7 +51,6 @@ body, html {
 
 .container {
   margin: 0 auto;
-  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,10 +65,8 @@ body, html {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
-.container-nav {
+.container--nav {
   margin: 0 auto;
-  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,24 +78,57 @@ body, html {
           justify-content: space-between;
 }
 
+.columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.column {
+  text-align: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.75rem;
+  width: 100%;
+}
+
 @media screen and (min-width: 1024px) {
-  .container, .container-nav {
+  .container {
     max-width: 960px;
   }
 }
 @media screen and (min-width: 1216px) {
-  .container, .container-nav {
+  .container {
     max-width: 1152px;
   }
 }
 @media screen and (min-width: 1408px) {
-  .container, .container-nav {
+  .container {
     max-width: 1344px;
   }
 }
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: black;
+}
+
 @media screen and (max-width: 1023px) {
   h1 {
-    font-size: 25px !important;
+    font-size: 25px;
   }
 
   h2 {
@@ -114,6 +148,7 @@ a:hover {
   padding: 1.2rem 0;
   min-height: 3.25rem;
   margin: auto;
+  max-width: 1350px;
 }
 .navbar .bx {
   font-size: 50px;
@@ -137,6 +172,9 @@ a:hover {
   padding: 0.5rem 0.75rem;
   color: #141c3a;
 }
+.navbar__brand {
+  padding: 0.5rem 0.75rem;
+}
 
 .hero {
   padding-top: 2rem;
@@ -147,6 +185,9 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.hero h1, .hero h2 {
+  margin-bottom: 1.5rem;
+}
 
 .hero-body {
   padding: 3rem 1.5rem;
@@ -155,15 +196,6 @@ a:hover {
 .column {
   padding: 0.75rem;
   text-align: center;
-}
-
-h1, h2 {
-  margin-bottom: 1.5rem;
-}
-
-h1 {
-  font-size: 3rem;
-  font-weight: 800;
 }
 
 h2 {
@@ -190,87 +222,61 @@ img {
   padding: 9rem 1.5rem;
 }
 
-.title {
-  font-size: 2rem !important;
-}
-
-form {
+.form {
   margin-top: 50px;
   -webkit-transition: all 4s ease-in-out;
   transition: all 4s ease-in-out;
+  width: 100%;
+  text-align: center;
 }
-form h1 {
-  font-weight: 300;
-  color: #141c3a;
-  line-height: 1.125;
-  font-size: 2.2rem;
+.form h1 {
+  font-size: 2rem;
+  font-weight: 400;
 }
-form .avatar-small {
+.form .avatar {
   width: 84px;
   margin: -50px auto 50px;
 }
-form .columns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-form .column {
-  text-align: start;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0.75rem;
-  width: 100%;
-}
-
-#contact-form {
+.form #contact-form {
   max-width: 640px;
   width: 100%;
 }
-
-.form-message {
+.form .form-message {
   width: 640px;
 }
-
-.input {
+.form .input {
   width: 100%;
   padding: calc(0.75em - 1px);
 }
-.input:required {
+.form .input:required {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-
-label {
+.form label {
+  font-size: 1.05rem;
   margin-bottom: 0.5rem;
   color: rgba(41, 51, 71, 0.65);
-  font-size: 1.05rem;
+  text-align: left;
 }
-
-textarea {
+.form textarea {
   width: 100%;
 }
-
-#thank-you-message {
+.form .button {
+  margin-top: 22px;
+}
+.form #thank-you-message {
   display: none;
   margin-top: 100px;
 }
-
-#thank-you-message.show {
+.form #thank-you-message.show {
   display: block;
 }
 
+@media screen and (max-width: 1023px) {
+  .columns {
+    display: block;
+  }
+}
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
