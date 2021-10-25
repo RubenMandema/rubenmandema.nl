@@ -53,6 +53,8 @@ body, html {
 .column {
   text-align: start;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   padding: 0.75rem;
   width: 100%;
