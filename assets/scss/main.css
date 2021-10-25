@@ -27,7 +27,7 @@ html {
   background: white;
 }
 
-* *:before *:after {
+*, *:before, *:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
@@ -228,11 +228,10 @@ img {
 }
 
 .form {
-  margin-top: 50px;
-  -webkit-transition: all 4s ease-in-out;
-  transition: all 4s ease-in-out;
   width: 100%;
   text-align: center;
+  -webkit-transition: all 4s ease-in-out;
+  transition: all 4s ease-in-out;
 }
 .form .column {
   -webkit-box-pack: center;
@@ -241,10 +240,10 @@ img {
 }
 .form .column label, .form .column input {
   width: 100%;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  text-align: left;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  text-align: start;
 }
 .form h1 {
   font-size: 2rem;
@@ -294,6 +293,10 @@ img {
     display: block;
   }
 }
+.contact .form {
+  border-top: 1px solid #E6ECF8;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;

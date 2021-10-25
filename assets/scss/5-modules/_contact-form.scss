@@ -26,17 +26,16 @@
 
 
 .form {
-  margin-top: 50px;
-  transition: all 4s ease-in-out;
   width: 100%;
   text-align: center;
+  transition: all 4s ease-in-out;
 
   .column {
     justify-content: center;
     label, input {
       width: 100%;
-      align-items: left;
-      text-align: left;
+      align-items: start;
+      text-align: start;
     }
   }
 
