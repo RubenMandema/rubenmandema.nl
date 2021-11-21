@@ -24,42 +24,37 @@
 @use "../4-layouts/navbar";
 //***********************************************
 
+.box {
+    background-color: white;
+    box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+    color: #141c3a;
+    display: block; 
+    border-radius: 22px;
+}
+  
+@media screen and (min-width: 1024px) {
+    .hallo {
+      .container {
+        width: 60%;
+      }
+    }
+}
+
+@media screen and (min-width: 1408px) {
+    .hallo {
+      .container {
+        width: 50%;
+      }
+    }
+}
+
+// MOBIEL//
+@media screen and (max-width: 1023px) {
+    .hallo {
+        .container {
+          width: 90%;
+        }
+    }
+}
 
 
-//***********************************************
-// Import 5-modules
-@use "../5-modules/contact-form";
-@use "../5-modules/skill_box";
-@use "../5-modules/hallo";
-//***********************************************
-// MAIN - HERO 
-
-.hero {
-    padding-top: 2rem;
-    display: flex;
-    justify-content: center;
-  }
-  .avatar {
-      margin: 2rem 0;
-      width: 210px;
-  }
-  .hero-body {
-    padding: 3rem 1.5rem;
-  }
-  
-  
-  .is-bottom {
-    text-align: center;
-    width: 75%;
-    margin-bottom: 0;
-    max-width: 860px;
-  }
-  
-  
-  /* HALLO BERICHT */
-  .hallo {
-    background-color: v.$primair;;
-    color: #fff;
-    padding: 9rem 1.5rem 18rem 1.5rem;
-  }
-  

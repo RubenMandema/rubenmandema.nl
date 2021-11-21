@@ -1,12 +1,44 @@
 //***********************************************
 // Import 1-helpers
-@use "../1-helpers/variables" as v;
+@use "../1-helpers/variables" as *;
 //***********************************************
 
 h1 {
   font-size: 3rem;
   font-weight: 800;
   color: black;
+  margin-bottom: 1.5rem;
+}
+
+.ondertitel {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+
+.list_title {
+  margin-top: 50px;
+  margin-bottom: 8px;
+  font-weight: 400;
+  color: $primair; 
 }
 
 
@@ -24,10 +56,10 @@ h1 {
 // ******************
 @media screen and (max-width: 1023px) {
     h1 {
-      font-size: 25px;
+      
     }
     h2 {
-      font-size: 15px;
+    
     }
   }
 

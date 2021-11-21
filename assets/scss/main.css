@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://use.typekit.net/soj4qgo.css");
 .button {
   padding: 0.5rem 1.2rem;
   font-weight: 400;
@@ -37,7 +37,7 @@ html {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "europa", sans-serif;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
@@ -89,6 +89,9 @@ body, html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
 }
 
@@ -111,6 +114,14 @@ body, html {
   width: 100%;
 }
 
+.padding {
+  padding: 70px 45px;
+}
+
+.text_align {
+  text-align: center;
+}
+
 @media screen and (min-width: 1024px) {
   .container {
     max-width: 960px;
@@ -130,17 +141,40 @@ h1 {
   font-size: 3rem;
   font-weight: 800;
   color: black;
+  margin-bottom: 1.5rem;
 }
 
-@media screen and (max-width: 1023px) {
-  h1 {
-    font-size: 25px;
-  }
-
-  h2 {
-    font-size: 15px;
-  }
+.ondertitel {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
 }
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+.list_title {
+  margin-top: 50px;
+  margin-bottom: 8px;
+  font-weight: 400;
+  color: #7510F7;
+}
+
 a {
   text-decoration: none;
   -webkit-transition: all 0.2s ease-in;
@@ -180,52 +214,6 @@ a:hover {
 }
 .navbar__brand {
   padding: 0.5rem 0.75rem;
-}
-
-.hero {
-  padding-top: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.hero h1, .hero h2 {
-  margin-bottom: 1.5rem;
-}
-
-.hero-body {
-  padding: 3rem 1.5rem;
-}
-
-.column {
-  padding: 0.75rem;
-  text-align: center;
-}
-
-h2 {
-  font-weight: 300;
-  line-height: 1.5;
-}
-
-img {
-  margin: 2rem 0;
-  width: 210px;
-}
-
-.is-bottom {
-  text-align: center;
-  width: 75%;
-  margin-bottom: 0;
-  max-width: 860px;
-}
-
-/* HALLO BERICHT */
-.hallo {
-  background-color: #7510F7;
-  color: #fff;
-  padding: 9rem 1.5rem;
 }
 
 .form {
@@ -294,6 +282,115 @@ img {
     display: block;
   }
 }
+.skills {
+  margin-top: -12rem;
+}
+.skills figure {
+  margin: 0 auto 2em;
+}
+.skills li {
+  font-weight: 100;
+}
+.skills ul {
+  list-style: none;
+}
+.skills .column {
+  border-bottom: 0px solid #E6ECF8;
+  border-right: 1px solid #E6ECF8;
+}
+.skills .no-border {
+  border: none !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .skills .conatiner {
+    max-width: 960px;
+  }
+}
+@media screen and (min-width: 1216px) {
+  .skills .container {
+    max-width: 1152px;
+  }
+}
+@media screen and (min-width: 1408px) {
+  .skills .container {
+    max-width: 1200px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .skills .container--is_smal {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .skills .box {
+    width: 90%;
+  }
+  .skills .column {
+    border-bottom: 1px solid #E6ECF8;
+    border-right: 0px solid #E6ECF8;
+  }
+  .skills .no-border {
+    border: none !important;
+  }
+}
+.box {
+  background-color: white;
+  -webkit-box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+          box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+  color: #141c3a;
+  display: block;
+  border-radius: 22px;
+}
+
+@media screen and (min-width: 1024px) {
+  .hallo .container {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1408px) {
+  .hallo .container {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .hallo .container {
+    width: 90%;
+  }
+}
+.hero {
+  padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.avatar {
+  margin: 2rem 0;
+  width: 210px;
+}
+
+.hero-body {
+  padding: 3rem 1.5rem;
+}
+
+.is-bottom {
+  text-align: center;
+  width: 75%;
+  margin-bottom: 0;
+  max-width: 860px;
+}
+
+/* HALLO BERICHT */
+.hallo {
+  background-color: #7510F7;
+  color: #fff;
+  padding: 9rem 1.5rem 18rem 1.5rem;
+}
+
 .contact .form {
   border-top: 1px solid #E6ECF8;
 }

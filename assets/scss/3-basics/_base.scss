@@ -40,12 +40,14 @@ body, html {
     align-items: center;
     justify-content: space-between;
   }
+
 }
 
 .columns {
   display: flex;
   align-items: center;
   flex-direction: row;
+  justify-content: center;
   width: 100%;
 }
  
@@ -60,6 +62,14 @@ body, html {
   width: 100%;
 }
 
+
+.padding {
+  padding: 70px 45px;
+}
+
+.text_align {
+  text-align: center;
+}
 
 @media screen and (min-width: 1024px) {
    .container {

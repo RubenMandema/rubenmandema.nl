@@ -1,0 +1,91 @@
+//***********************************************
+// Import 1-helpers
+@use "../1-helpers/variables" as v;
+//***********************************************
+
+
+//***********************************************
+// Import 2-tools
+
+//***********************************************
+
+
+//***********************************************
+// Import 3-basics
+@use "../3-basics/buttons";
+@use "../3-basics/base";
+@use "../3-basics/typography";
+@use "../3-basics/links";
+//***********************************************
+
+
+//***********************************************
+// Import 4-layouts
+@use "../4-layouts/navbar";
+//***********************************************
+.skills {
+    margin-top: -12rem;
+
+    figure {
+        margin: 0 auto 2em;
+    }
+
+    li {
+        font-weight: 100;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    .column {
+        border-bottom: 0px solid #E6ECF8;
+        border-right: 1px solid #E6ECF8;
+    }
+    .no-border {
+        border: none !important;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .skills {
+        .conatiner {
+            max-width: 960px;
+        }
+    }
+}
+@media screen and (min-width: 1216px) {
+    .skills {
+        .container {
+            max-width: 1152px;
+        }
+    }
+}
+@media screen and (min-width: 1408px) {
+    .skills {
+        .container {
+            max-width: 1200px;
+        }
+    }
+}
+
+
+// MOBIEL//
+@media screen and (max-width: 1023px) {
+    .skills {
+        .container--is_smal {
+            justify-content: center !important;
+        }
+        .box {
+            width: 90%;
+        }
+        .column {
+            border-bottom: 1px solid #E6ECF8;
+            border-right: 0px solid #E6ECF8;
+        }
+        .no-border {
+            border: none !important;
+        }
+    }
+}
+
